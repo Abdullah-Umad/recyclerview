@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtmain1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="10dp"
+        android:text="Topics for you"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmain1"
+        android:layout_marginTop="4dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/txtmain2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Inspired"
+        android:textSize="25sp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/recycle1"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmain2"
+        android:layout_marginTop="4dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+
+        android:id="@+id/imgmain1"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtmain1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/more" />
+
+    <ImageView
+        android:id="@+id/imgmain2"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtmain2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/more" />
+
+</RelativeLayout>
